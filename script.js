@@ -1,11 +1,20 @@
 document.addEventListener("click", function () {
     const music = document.getElementById("birthdayMusic");
 
-    if (music) {
-        music.volume = 0.7;
-        music.play().catch(() => {});
-    }
-}, { once: true });
+function startMusic() {
+    if (!music) return;
+
+    music.volume = 0.7;
+    music.load();
+
+    music.play()
+        .then(() => {
+            console.log("Birthday music started 🎵");
+        })
+        .catch(error => {
+            console.log("Music error:", error);
+        });
+}
 /* ==================================
    PAGE SWITCHING
 ================================== */
