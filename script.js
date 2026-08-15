@@ -1,3 +1,11 @@
+document.addEventListener("click", function () {
+    const music = document.getElementById("birthdayMusic");
+
+    if (music) {
+        music.volume = 0.7;
+        music.play().catch(() => {});
+    }
+}, { once: true });
 /* ==================================
    PAGE SWITCHING
 ================================== */
