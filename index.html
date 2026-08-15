@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Ankita 🎂</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div id="floating-hearts"></div>
+<div id="floating-sparkles"></div>
+    <!-- MUSIC -->
+    <audio id="birthdayMusic" loop>
+        <source src="assets/birthday.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!-- =========================
+         PAGE 1 : BALLOONS
+    ========================== -->
+
+    <section id="balloonPage" class="page active">
+
+        <div class="stars"></div>
+
+        <div class="intro">
+            <p class="small-text">A little surprise for you...</p>
+
+            <h1>Hey Ankita 💗</h1>
+
+            <p class="instruction">
+                Pop all the balloons 🎈
+            </p>
+        </div>
+
+        <div class="balloon-area">
+
+            <button class="balloon balloon1" data-balloon>🎈</button>
+            <button class="balloon balloon2" data-balloon>🎈</button>
+            <button class="balloon balloon3" data-balloon>🎈</button>
+            <button class="balloon balloon4" data-balloon>🎈</button>
+            <button class="balloon balloon5" data-balloon>🎈</button>
+            <button class="balloon balloon6" data-balloon>🎈</button>
+            <button class="balloon balloon7" data-balloon>🎈</button>
+
+        </div>
+
+        <p id="balloonCount">7 balloons left 🎈</p>
+
+    </section>
+
+
+    <!-- =========================
+         PAGE 2 : CAKE
+    ========================== -->
+
+    <section id="cakePage" class="page">
+
+        <div class="cake-content">
+
+            <p class="small-text">You found the next surprise...</p>
+
+            <h1>Make a Wish, Nane ✨</h1>
+
+            <p class="instruction">
+                Tap every candle 🕯️
+            </p>
+
+
+            <div class="cake">
+
+                <div class="candle candle1" data-candle>
+                    <div class="flame"></div>
+                </div>
+
+                <div class="candle candle2" data-candle>
+                    <div class="flame"></div>
+                </div>
+
+                <div class="candle candle3" data-candle>
+                    <div class="flame"></div>
+                </div>
+
+                <div class="candle candle4" data-candle>
+                    <div class="flame"></div>
+                </div>
+
+                <div class="candle candle5" data-candle>
+                    <div class="flame"></div>
+                </div>
+
+                <div class="cake-top"></div>
+                <div class="cake-middle"></div>
+                <div class="cake-bottom"></div>
+
+                <div class="cake-decoration">♥ ♥ ♥</div>
+
+            </div>
+
+            <p id="candleCount">5 candles glowing 🕯️</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PAGE 3 : HAPPY BIRTHDAY
+    ========================== -->
+
+    <section id="birthdayPage" class="page">
+
+        <div id="confetti"></div>
+
+        <div class="birthday-content">
+
+            <div class="sparkle">✨</div>
+
+            <p class="celebrate">Today is your special day...</p>
+
+            <h1 class="birthday-title">
+                HAPPY<br>
+                BIRTHDAY
+            </h1>
+
+            <h2>ANKITA 💗</h2>
+
+            <p class="nickname">
+                Our Nane ✨
+            </p>
+
+            <button id="continueBtn" class="main-btn">
+                There's more for you 💌
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PAGE 4 : PHOTOS + WISH
+    ========================== -->
+
+    <section id="wishPage" class="page">
+
+        <div class="wish-container">
+
+            <p class="small-text">A little message for you...</p>
+
+            <h1 class="wish-title">
+                For My Beautiful Naney 💗
+            </h1>
+
+
+            <!-- PHOTOS -->
+
+            <div class="photo-grid">
+
+                <div class="photo-card">
+                    <img src="assets/photo1.png.jpeg" alt="Ankita">
+                </div>
+
+                <div class="photo-card">
+                    <img src="assets/photo2.png.jpeg" alt="Ankita">
+                </div>
+
+                <div class="photo-card">
+                    <img src="assets/photo3.png.jpeg" alt="Ankita">
+                </div>
+
+            </div>
+
+
+            <!-- YOUR WISH -->
+
+            <div class="message-card">
+
+                <div class="heart">💗</div>
+
+                <p id="personalWish">
+                    YOUR BIRTHDAY WISH WILL GO HERE...
+                </p>
+
+            </div>
+
+
+            <div class="ending">
+
+                <p>With lots of love ❤️</p>
+
+                <h2>By your lovely brother, Badri ❤️</h2>
+
+                <button id="replayBtn" class="main-btn">
+                    🔄 Replay the Surprise
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
